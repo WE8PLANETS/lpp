@@ -20,7 +20,7 @@ int dem[20],sup[20],rf[20],cf[20],sum=0;
         {
             for(j=0; j<n; j++)
             {
-            cout<<" Cost Matrix : "<<(i+1)<<(j+1);
+            cout<<" Cost Matrix  "<<(i+1)<<(j+1)<<": ";
             cin>>c[i][j];
         }
     }
@@ -28,25 +28,25 @@ int dem[20],sup[20],rf[20],cf[20],sum=0;
 
   cout<<"\n  Demand: \n";
   for(i=0; i<n; i++){
-  cout<<" Demand [ : "<<(i+1);
+  cout<<" Demand  "<<(i+1)<<": ";
    cin>>dem[i];
   }
 
   cout<<"\n Supply: \n";
   for(i=0; i<m; i++){ //
-  cout<<" Supply  : "<<(i+1);
+  cout<<" Supply "<<(i+1)<<": ";
    cin>>sup[i];
   }
 
-  cout<<"\n Matrix:\n";
+  cout<<"\n Matrix\n";
   for(i=0; i<m; i++){
     for(j=0; j<n; j++)
-        cout<<" %d | "<<c[i][j];
-        cout<<"%d  "<<sup[i];
+        cout<<"  "<<c[i][j];
+        cout<<"  "<<sup[i];
         cout<<"\n";
     }
   for(j=0; j<n; j++)
-   cout<<"%d  "<<dem[j];
+   cout<<"  "<<dem[j];
 
 
 
@@ -126,6 +126,5 @@ int dem[20],sup[20],rf[20],cf[20],sum=0;
 
     //cout<<"\n %d",sum);
   }
-  cout<<"\n\n total cost %d\n\n"<<sum;
-  system("pause");
+  cout<<"\n\n total cost :"<<sum;
 }
