@@ -1,3 +1,4 @@
+/* Q. Write a program to find regression line of y on x from any given set of points. */
 #include<iostream>
 #define S 50
 
